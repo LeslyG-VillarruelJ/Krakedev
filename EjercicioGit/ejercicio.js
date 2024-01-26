@@ -3,5 +3,4 @@ saludar = function(){
     cmpImagenSaludo = document.getElementById("imgSaludo");
     cmpImagenSaludo.src = "./imagenes/ganar.gif"
     console.log("ingresa a saludar");
-
 }
