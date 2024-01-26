@@ -1,1 +1,5 @@
 Este es el documento de texto a1
+
+este archivo fue modificado
+
+ahora ya funciona
