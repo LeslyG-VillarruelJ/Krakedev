@@ -7,5 +7,10 @@ calcularPromedioNotas = function(){
     let promedio = calcularPromedio(valorCaja1,valorCaja2,valorCaja3);
     //c. Muestra en pantalla el valor del promedio con 2 decimales
     promedioFormateado = promedio.toFixed(2);
-    mostrarTexto("promedio",promedioFormateado)
+    mostrarTexto("promedio",promedioFormateado);
+    if(promedioFormateado > 7){
+        mostrarImagen("imagen","exito.gif");
+    }else{
+        mostrarImagen("imagen","fracaso.gif");
+    }
 }
