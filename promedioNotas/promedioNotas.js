@@ -8,9 +8,17 @@ calcularPromedioNotas = function(){
     //c. Muestra en pantalla el valor del promedio con 2 decimales
     promedioFormateado = promedio.toFixed(2);
     mostrarTexto("promedio",promedioFormateado);
-    if(promedioFormateado > 7){
-        mostrarImagen("imagen","exito.gif");
+    if(promedioFormateado>0 && promedioFormateado<5){
+        mostrarTexto("mensaje","REPROBADO");
+        mostrarImagen("imagen","reprobado.gif");
+    }else if(promedioFormateado>=5 && promedioFormateado<=8){
+        mostrarTexto("mensaje","BUEN TRABAJO");
+        mostrarImagen("imagen","buenTrabajo.gif");
+    }else if(promedioFormateado>8 && promedioFormateado<=10){
+        mostrarTexto("mensaje","EXCELENTE");
+        mostrarImagen("imagen","excelente.gif");
     }else{
-        mostrarImagen("imagen","fracaso.gif");
+        mostrarTexto("mensaje","DATOS INCORRECTOS");
+        mostrarImagen("imagen","incorrecto.gif");
     }
 }
