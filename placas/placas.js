@@ -3,6 +3,7 @@ validarPlaca = function () {
     let placa;
     let provincia;
     let tipoVehiculo;
+    let diaPicoYPlaca;
     placa = recuperarTexto("placa");
     erroresEstructura = validarEstructura(placa);
     if (erroresEstructura == null) {
@@ -18,6 +19,9 @@ validarPlaca = function () {
         tipoVehiculo = obtenerTipoVehiculo(placa);
         // Nota: Siempre va a existir una letra para un tipo de vehiculo debido a que los vehiculos particulares corresponde a cualquier letra que sobre por lo que nunca retornara null
         mostrarTexto("lblTipoVehiculo", "Tipo de Vehiculo: " + tipoVehiculo);
+        // Pico y Placa
+        diaPicoYPlaca = obtenerPicoYPlaca(placa);
+        mostrarTexto("lblDiaPicoYPlaca","Dia de Pico y Placa: " + diaPicoYPlaca);
     } else {
         mostrarTexto("lblValidacion", "ESTRUCTURA INCORRECTA");
         mostrarTexto("lblErroresValidacion", erroresEstructura);

@@ -140,3 +140,19 @@ obtenerTipoVehiculo = function (placa) {
     return tipoVehiculo;
 }
 
+obtenerPicoYPlaca = function(placa){
+    let ultimaLetraPlaca = placa.charAt(placa.length-1);
+    let dia;
+    if(ultimaLetraPlaca==1 || ultimaLetraPlaca==2){
+        dia = "Lunes";
+    }else if(ultimaLetraPlaca==3 || ultimaLetraPlaca==4){
+        dia = "Martes";
+    }else if(ultimaLetraPlaca==5 || ultimaLetraPlaca==6){
+        dia = "Miercoles";
+    }else if(ultimaLetraPlaca==7 || ultimaLetraPlaca==8){
+        dia = "Jueves";
+    }else{
+        dia = "Viernes";
+    }
+    return dia;
+}
