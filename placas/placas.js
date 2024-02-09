@@ -21,9 +21,18 @@ validarPlaca = function () {
         mostrarTexto("lblTipoVehiculo", "Tipo de Vehiculo: " + tipoVehiculo);
         // Pico y Placa
         diaPicoYPlaca = obtenerPicoYPlaca(placa);
-        mostrarTexto("lblDiaPicoYPlaca","Dia de Pico y Placa: " + diaPicoYPlaca);
+        mostrarTexto("lblDiaPicoYPlaca", "Dia de Pico y Placa: " + diaPicoYPlaca);
     } else {
         mostrarTexto("lblValidacion", "ESTRUCTURA INCORRECTA");
         mostrarTexto("lblErroresValidacion", erroresEstructura);
     }
+}
+
+limpiar = function () {
+    mostrarTextoEnCaja("placa", "");
+    mostrarTexto("lblValidacion", "");
+    mostrarTexto("lblErroresValidacion", "")
+    mostrarTexto("lblProvincia", "");
+    mostrarTexto("lblTipoVehiculo", "");
+    mostrarTexto("lblDiaPicoYPlaca", "");
 }

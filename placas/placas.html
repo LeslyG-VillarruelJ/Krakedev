@@ -10,11 +10,14 @@
 </head>
 
 <body>
-    <div>
+    <div id="principal">
         <h1>Sistema de Validación de Placas</h1>
         <h3>Ingrese la placa</h3>
         <input type="text" id="placa" /><br /><br />
-        <input type="button" value="VALIDAR" id="btnValidar" onclick="validarPlaca()" />
+        <div id="botones">
+            <input type="button" value="VALIDAR" id="btnValidar" onclick="validarPlaca()" />
+            <input type="button" value="LIMPIAR" id="btnLimpiar" onclick="limpiar()" />
+        </div>
         <h3 id="lblValidacion"></h3>
         <h3 id="lblErroresValidacion"></h3>
         <h3 id="lblProvincia"></h3>
