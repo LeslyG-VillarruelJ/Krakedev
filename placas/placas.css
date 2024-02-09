@@ -1,0 +1,17 @@
+body {
+    background-image: url(./imagenes/placa.jpg);
+    background-size: cover;
+}
+
+div {
+    background-color: rgba(130, 165, 42, 0.9);
+    color: white;
+    margin: 10% 30%;
+    text-align: center;
+    padding: 3%;
+}
+
+#btnValidar {
+    padding: 1%;
+    background-color: aquamarine;
+}
