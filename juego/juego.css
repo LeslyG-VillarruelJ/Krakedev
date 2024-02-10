@@ -4,6 +4,28 @@ body{
     color: white;
 }
 
+#titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#puntajes{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(14, 189, 131);
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.puntaje{
+    display: flex;
+    flex-direction: row;
+    margin: 0% 5%;
+    padding: 0%;
+}
+
 #contenido{
     background-color:chartreuse;
     display: flex;
@@ -21,6 +43,6 @@ body{
 }
 
 .imagenes{
-    width: 130px;
+    width: 100px;
     padding: 3%;
 }
