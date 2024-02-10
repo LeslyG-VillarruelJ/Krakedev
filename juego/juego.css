@@ -1,0 +1,26 @@
+body{
+    background-color:darkgray;
+    text-align: center;
+    color: white;
+}
+
+#contenido{
+    background-color:chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin: 2% 20%;
+    padding: 3%;
+}
+
+#usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.imagenes{
+    width: 130px;
+    padding: 3%;
+}
