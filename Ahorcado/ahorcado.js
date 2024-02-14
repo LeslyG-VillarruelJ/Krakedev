@@ -42,3 +42,15 @@ mostrarLetra = function (letra, posicion) {
         mostrarTexto("div4", letra);
     }
 }
+
+validar = function(letra){
+    let letrasEncontradas;
+    let caracter;
+    for(let i=0;i<palabraSecreta.length;i++){
+        caracter = palabraSecreta.charAt(i);
+        if(caracter == letra){
+            mostrarLetra(letra, posicion);
+            letrasEncontradas++;
+        }
+    }
+}
