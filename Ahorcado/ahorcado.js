@@ -11,20 +11,34 @@ esMayuscula = function (caracter) {
     }
 }
 
-guardarPalabra = function(){
+guardarPalabra = function () {
     let palabra = recuperarTexto("password");
     let caracter;
     let validacionMayuscula = true;
-    for(let i=0;i<palabra.length;i++){
+    for (let i = 0; i < palabra.length; i++) {
         caracter = palabra.charAt(i);
-        if(!esMayuscula(caracter)){
+        if (!esMayuscula(caracter)) {
             validacionMayuscula = false;
         }
     }
-    if(palabra.length == 5 && validacionMayuscula==true){
+    if (palabra.length == 5 && validacionMayuscula == true) {
         palabraSecreta = palabra;
-    }else{
+    } else {
         alert("Debe ingresar una palabra de 5 letras mayusculas");
     }
     console.log(palabra);
+}
+
+mostrarLetra = function (letra, posicion) {
+    if (posicion == 0) {
+        mostrarTexto("div0", letra);
+    } else if (posicion == 1) {
+        mostrarTexto("div1", letra);
+    } else if (posicion == 2) {
+        mostrarTexto("div2", letra);
+    } else if (posicion == 3) {
+        mostrarTexto("div3", letra);
+    } else if (posicion == 4) {
+        mostrarTexto("div4", letra);
+    }
 }
