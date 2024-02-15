@@ -1,6 +1,9 @@
 //No se olvide de respirar, mantenga la calma y demuestre lo que sabe
 //variables globales
 let palabraSecreta;
+let intentos = 0;
+let coincidencias = 0;
+let errores = 0;
 
 esMayuscula = function (caracter) {
     let codigoCaracter = caracter.charCodeAt(0);
@@ -44,14 +47,19 @@ mostrarLetra = function (letra, posicion) {
 }
 
 validar = function (letra) {
-    let letrasEncontradas;
+    let letrasEncontradas = 0;
     let caracter;
     for (let i = 0; i < palabraSecreta.length; i++) {
         caracter = palabraSecreta.charAt(i);
         if (caracter == letra) {
             mostrarLetra(letra, i);
             letrasEncontradas++;
+            coincidencias++;
         }
+    }
+    if (letrasEncontradas == 0) {
+        alert("LA LETRA NO ES PARTE DE LA PALABRA");
+        errores++;
     }
 }
 
@@ -60,6 +68,12 @@ ingresarLetra = function () {
     letra = recuperarTexto("txtLetra");
     if (esMayuscula(letra)) {
         validar(letra);
+        if (coincidencias == 5) {
+            alert("HA GANADO");
+        } else if (intentos == 10) {
+            alert("HA PERDIDO");
+        }
+        intentos++;
     } else {
         alert("SOLO SE ACEPTAN MAYUSCULAS");
     }
