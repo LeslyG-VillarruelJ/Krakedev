@@ -79,15 +79,20 @@ body{
     justify-content: center;
 }
 tbody tr:nth-child(odd) {
-    background-color: #908efc;
+    background-color: #5cff25;
   }
   
   tbody tr:nth-child(even) {
-    background-color: #6a51cf;
+    background-color: #bbfda4;
   }
   
   tbody tr {
     background-image: url(noise.png);
+  }
+
+  th{
+    background-color: #30be01;
+    color: white;
   }
   
   table {
