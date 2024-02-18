@@ -169,6 +169,7 @@ tbody tr:nth-child(odd) {
     justify-content: center;
     align-items: flex-end;
     margin-right: 20px;
+    width: 40px;
 }
 .resultado{
     display: flex;
@@ -190,4 +191,5 @@ tbody tr:nth-child(odd) {
     color:red;
     font-style: italic;
     font-size: 14px;
+    width: 300px;
 }
