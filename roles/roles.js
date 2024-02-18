@@ -163,6 +163,11 @@ guardar = function () {
             empleadoGuardado = agregarEmpleado(empleadoNuevo);
             if (empleadoGuardado == true) {
                 alert("EMPLEADO GUARDADO CORRECTAMENTE");
+                deshabilitarComponente("txtCedula");
+                deshabilitarComponente("txtNombre");
+                deshabilitarComponente("txtApellido");
+                deshabilitarComponente("txtSueldo");
+                deshabilitarComponente("btnGuardar");
             } else {
                 alert("YA EXISTE UN EMPLEADO CON LA CEDULA " + empleadoNuevo.cedula);
             }
