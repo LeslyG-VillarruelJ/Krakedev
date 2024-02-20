@@ -211,3 +211,17 @@ limpiar = function () {
     esNuevo = false;
     deshabilitarElementos();
 }
+
+buscarPorRol = function () {
+    let empleadoBuscado;
+    let valorCedula;
+    valorCedula = recuperarTexto("txtBusquedaCedulaRol");
+    empleadoBuscado = buscarEmpleado(valorCedula);
+    if (empleadoBuscado != null) {
+        mostrarTexto("infoCedula", empleadoBuscado.cedula);
+        mostrarTexto("infoNombre", empleadoBuscado.nombre + " " + empleadoBuscado.apellido);
+        mostrarTexto("infoSueldo", empleadoBuscado.sueldo);
+    } else {
+        alert("EL EMPLEADO NO EXISTE");
+    }
+}
