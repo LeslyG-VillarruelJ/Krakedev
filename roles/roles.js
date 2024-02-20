@@ -264,11 +264,12 @@ buscarRol = function (cedula) {
     for (let i = 0; i < roles.length; i++) {
         rol = roles[i];
         if (cedula == rol.cedula) {
-            return rol;
+            break;
         } else {
-            return null;
+            rol = null;
         }
     }
+    return rol;
 }
 
 agregarRol = function (rol) {
