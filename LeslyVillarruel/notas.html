@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="notas.css">
+    <script src="notas.js"></script>
+    <script src="utilitarios.js"></script>
+</head>
+
+<body onload="mostrarTabla()">
+    <div class="divTitulo">
+        <img src="./imagenes/notas.png" width="100px" />
+    </div>
+    <div class="divContenido">
+        <div class="texto">
+            <h4>Ingrese nombre</h4>
+            <input type="text" id="txtNombre" />
+        </div>
+        <div class="texto">
+            <h4>Ingrese apellido</h4>
+            <input type="text" id="txtApellido" />
+        </div>
+        <div class="texto">
+            <h4>Ingrese Nota 1</h4>
+            <input type="text" id="txtNota1" />
+        </div>
+        <div class="texto">
+            <h4>Ingrese Nota 2</h4>
+            <input type="text" id="txtNota2" />
+        </div>
+        <div class="texto">
+            <h4>Ingrese Nota 3</h4>
+            <input type="text" id="txtNota3" />
+        </div>
+        <div>
+            <h3 id="lblTotal"></h3>
+            <h3 id="lblPromedio"></h3>
+        </div>
+        <div class="boton">
+            <input type="button" value="Calcular" onclick="calcular()" />
+        </div>
+        <div class="boton">
+            <input type="button" value="Guardar" id="btnGuardar" onclick="guardar()" />
+        </div>
+        <div id="tablaEstudiantes">
+
+        </div>
+        <h3>Lesly Villarruel</h3>
+    </div>
+</body>
+
+</html>

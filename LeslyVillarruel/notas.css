@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(215, 253, 177);
+    color: black;
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+}
+
+.divTitulo {
+    text-align: center;
+}
+
+.divContenido {
+    margin: 0% 30%;
+    padding: 2%;
+    text-align: center;
+}
+
+.boton{
+    margin: 0% 2%;
+    padding: 0.5% 1%;
+}
+
+table {
+    background-color: #0b0c0c;
+    width: 100%;
+}
+
+th{
+    background-color: chartreuse;
+}
+
+td{
+    background-color: rgb(193, 250, 135);
+}
+
+#tablaEstudiantes {
+    margin: 5%;
+}
